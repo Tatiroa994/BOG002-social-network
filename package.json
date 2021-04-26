@@ -15,22 +15,33 @@
     "stylelint": "stylelint --aei src/**/*.css",
     "pretest": "npm run htmlhint && npm run eslint && npm run stylelint",
     "test": "jest --coverage",
-    "start": "serve src/"
+    "start": "webpack-dev-server",
+    "build": "webpack --mode production"
   },
   "devDependencies": {
     "@babel/core": "^7.11.4",
     "@babel/preset-env": "^7.11.0",
     "babel-jest": "^26.3.0",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.2.4",
     "eslint": "^7.7.0",
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-jest": "^24.1.0",
+    "html-webpack-plugin": "^5.3.1",
     "htmlhint": "^0.14.0",
+    "install": "^0.13.0",
     "jest": "^26.4.2",
+    "npm": "^7.11.1",
     "regenerator-runtime": "^0.13.1",
     "serve": "^11.0.2",
+    "style-loader": "^2.0.0",
     "stylelint": "^13.6.1",
-    "stylelint-config-recommended": "^4.0.0"
+    "stylelint-config-recommended": "^4.0.0",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.35.1",
+    "webpack-cli": "^4.6.0",
+    "webpack-dev-server": "^3.11.2"
   },
   "engines": {
     "node": ">=10"
